@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ActiveBox</title>
+    <meta name="viewport" content="width-divice-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+    <!-- Sprite -->
+    <svg style="display: none;">
+        <symbol id="facebook" viewBox="0 0 24 24">
+            <path
+                d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z" />
+
+        </symbol>
+
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <g>
+                <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+        			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+        			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+        			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+        			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+        			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+        			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+        			C480.224,136.96,497.728,118.496,512,97.248z" />
+            </g>
+        </symbol>
+
+        <symbol id="linkedin" viewBox="0 0 510 510">
+            <g>
+                <path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
+    			 M153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9
+    			S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204
+    			V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z" />
+            </g>
+    </svg>
+    </symbol>
+    <!--Header-->
+
+    <header class=" header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo" data-scroll="#intro">
+                    <img src="/img/selfie.png" alt="">
+                </div>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#features">PHOTO_GALERIA</a>
+                    <a class="nav__link" href="#" data-scroll="#works">VIDEO_GALERIA</a>
+                    <a class="nav__link" href="#" data-scroll="#">ALBUME</a>
+                    <a class="nav__link" href="#" data-scroll="#team">RECOMANDAR & RECENZII</a>
+                    <a class="nav__link" href="#" data-scroll="#download">CONTACTE</a>
+                </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__innera">
+                <div class="rotate-block">
+                    <div class="change-img">
+                        <div class="front-side-img"><img src="/img/04.png" alt=""></div>
+
+                    </div>
+                </div>
+                <div class="rotate-block">
+                    <div class="change-img">
+                        <div class="front-side-img"><img src="/img/05.png" alt=""></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Intro-->
+    <!-- Block 1 -->
+
+    <div class="features" id="features">
+        <div class="cont">
+            <img src=" img/r1.jpg" alt="">
+        </div>
+        <div class="features__item">
+
+            <h4 class="features__title">SELFIEBOX</h4>
+            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis
+                risus eget urna mollis ornare vel eu leo. Donec
+                ullamcorper nulla non metus auctor fringilla.</div>
+        </div>
+    </div>
+    <!-- Block 2 -->
+    <div class="features" id="features">
+        <div class="cont">
+            <img src="img/r2.jpg" alt="">
+        </div>
+
+        <div class="features__item">
+
+            <h4 class="features__title">SELFIE360</h4>
+            <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis
+                risus eget urna mollis ornare vel eu leo. Donec
+                ullamcorper nulla non metus auctor fringilla.</div>
+        </div>
+    </div>
+
+    <!-- sLIDER -->
+
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_4.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_5.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_6.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_7.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_8.png" alt="">
+            </div>
+
+
+            <!-- Same 9 slides (doubled) -->
+
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_4.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_5.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_6.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_7.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./img/blog/recenzii_selfiering.md_8.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Gotobtn -->
+    <div class="container">
+        <div class="gotobtn">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+
+    <!-- Blog -->
+    <div class="team" id="team">
+        <div class="container">
+            <div class="team__inner">
+
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_1.jpg "
+                        alt="">
+                    <div class="team__name">Ana Venieru</div>
+                    <div class="team__text">
+                        <p>Ana Venieru - Vă mulțumim foarte mult pentru atmosfera creată. Este confortabil și ușor să
+                            lucrezi cu Dvs., ceea ce este destul de important și necesar pentru o muncă eficientă și un
+                            rezultat frumos ❤️ Cu mare drag vă recomandăm . Vă dorim succese în tot ce faceți!O faceți
+                            foarte bine❤️</p>
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_2.jpg "
+                        alt="">
+                    <div class="team__name">Djulia Gheorghina</div>
+
+                    <div class="team__text">
+                        <p> Mulțumim pentru serviciile oferite!!! Sunteți superbi și fotografiile sunt la nivel. Vă
+                            recomand cu încredere 🤩🤩🤩 succese </p>
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_3.jpg "
+                        alt="">
+                    <div class="team__name">Elena Trifan Chițanu</div>
+
+                    <div class="team__text">
+                        <p>Recomand cu încredere! Datorită Cabinei Foto Ring, am avut o petrecere mai interesantă. Am
+                            primit toate pozele în plic, magneți și un link cu pozele de la petrecere. Toate acestea la
+                            un preț mai bun decât la ceilalți care prestează astfel de servicii. Domnul cu Cabina Foto a
+                            avut răbdare cu noi atunci când am ales template-ul și am discutat toate detaliile și în
+                            timpul evenimentului a fost la dispoziția noastră atât timp cât am avut nevoie. Vă mulțumim
+                            pentru serviciile dumneavoastră!</p>
+
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_4.jpg "
+                        alt="">
+                    <div class="team__name">Georgiana Muntean</div>
+                    <div class="team__text">
+                        <p>Servicii de nota 10!😊 Mulțumim pentru serviciile voastre! Deși am discutat doar in modul
+                            virtual și nu ne-am întâlnit decât în ziua evenimentului, totul a mers foarte bine:
+                            calitatea pozelor, diverse animații pentru poze, mereu era cineva lângă cabina care ajuta
+                            persoanele în realizarea fotografiilor, amabilitate si pret bun! Mulțumim! Cu siguranță vă
+                            voi recomanda și altor persoane.🥳</p>
+
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_5.jpg "
+                        alt="">
+                    <div class="team__name">Andreea Galici</div>
+                    <div class="team__text">
+                        <p>Echipa care îți creează memorii pe viață! Servicii la superlativ!</p>
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_6.jpg "
+                        alt="">
+                    <div class="team__name">Maria Ciobanu</div>
+
+                    <div class="team__text">
+                        <p>Mulțumim pentru lucru calitativ , cu toții am rămas plăcut surprinși . Din partea mea , aș
+                            dori să vă urez succes și să-mi exprim recunoștința pentru munca excelentă . Neapărat
+                            revenim la Dvs 🥰</p>
+
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_7.jpg "
+                        alt="">
+                    <div class="team__name">Prisăcaru Valentina</div>
+
+                    <div class="team__text">
+                        <p>Super invenție pentru ați creea o petrecere frumoasă și deosebită ,cu amintiri în formă de
+                            poze interesante și de calitate . Recomand cu cea mai mare încredere .🥇❤️</p>
+
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img style="border-radius: 15px;" class="team__photo" src="img/blog/recenzii_selfiering.md_8.jpg"
+                        alt="">
+                    <div class="team__name">Balanici Ion</div>
+
+                    <div class="team__text">
+                        <p>Recomand cu încredere și căldură, servicii de nota 10. Poze calitative , amintiri frumoase 🥳
+                        </p>
+
+                    </div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="#" target="blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#linkedin"></use>
+                            </svg>
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+            <!--/.team_inner-->
+        </div>
+        <!--/.container-->
+    </div>
+
+    <!-- Company -->
+    <div class="section ">
+        <div class="container">
+
+            <div class="logos">
+                <div class="logos__item">
+                    <img class="logos__img" src="img/clients/gt.png" alt="">
+                </div>
+                <div class="logos__item">
+                    <img class="logos__img" src="img/clients/zen1.png" alt="">
+                </div>
+                <div class="logos__item">
+                    <img class="logos__img" src="img/clients/lt.png" alt="">
+                </div>
+                <div class="logos__item">
+                    <img class="logos__img" src="img/clients/jc.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <div class="contact-section" id="download">
+        <h1>Contact Us</h1>
+
+        <div class="container">
+            <form class="contact-form" action="index.html" method="post">
+                <input type="text" class="contact-form-text" placeholder="Your name">
+                <input type="emal" class="contact-form-text" placeholder="Your email">
+                <input type="text" class="contact-form-text" placeholder="Your text">
+                <textarea class="contact-form-text" placeholder="Your message"></textarea>
+                <input type="submit" class="contact-form-btn" value="Send">
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            <div class="copyright__text">
+                <section class="s4">
+                    <a href="#" class="iconbtn fab fa-facebook"></a>
+                    <a href="#" class="iconbtn fab fa-telegram"></a>
+                    <a href="#" class="iconbtn fab fa-viber"></a>
+                </section>
+                <div>
+                    <div><span>Copyright © 2023 SELFIERING. All Rights Reserved</span></div>
+                </div>
+
+                <div> <span>SELFIERING</span></div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"> </script>
+
+
+</body>
+
+</html>
