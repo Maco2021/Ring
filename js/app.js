@@ -86,10 +86,38 @@ $(function () {
     });
 
 
+    $(document).ready(function () {
+        $('.box div').click(function () {
+            if ($(this).hasClass('spin')) {
+                $('.box div').removeClass('spin');
+            }
+            else {
+                $('.box div').removeClass('spin');
+                $(this).addClass('spin');
+            }
+        });
+
+    });
+
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+
+    });
+
+
+
 
 });
-
-
 
 
 
