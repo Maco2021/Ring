@@ -50,7 +50,7 @@ p {
 .header.fixed{
     height: auto;
     position: fixed;
-    background-color: #31344e;
+    opacity: 0.8;
     background: url(/img/intro.jpg);
 }
 .header.fixed .header__inner {
@@ -155,33 +155,14 @@ p {
     background: #000;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Body Box */
 
 .body{
     justify-content: center;
     align-items: center;
     display: flex;
-    min-height: 100vh;
-    background: #000;
+    min-height: 60vh;
+    background: url(../img/sss.jpg);
 }
 
 .box{
@@ -237,23 +218,6 @@ p {
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Блок картинки */
@@ -336,6 +300,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin: 100px 0;
+    background: url(../img/ddd.jpg) no-repeat;
+   
 }
 
 .features__item{
@@ -608,13 +574,15 @@ p {
     display: grid;
     place-items: center;
     overflow: hidden;
-  
+    background: url(../img/sli.png);
+   
 }
 
 .slide-track{
     display: flex;
     width: calc(250px *18);
     animation: scroll 40s linear infinite;
+    
 }
 
 .slide-track:hover{
@@ -855,6 +823,7 @@ img:hover{
 
 .team{
     margin: 100px 0 70px;
+    background: url(../img/blog.jpg);
   
 }
 
@@ -1193,14 +1162,15 @@ img:hover{
 /* Form */
 
 .contact-section{
-    background: url(/img/intro.jpg) no-repeat center;
+    background: url(/img/footer.jpg) no-repeat center;
     background-size: cover;
     padding: 40px 0;
 }
 
 .contact-section h1{
     text-align: center;
-    color: #ddd;
+    color: #000;
+  
 }
 
 .border{
@@ -1316,8 +1286,8 @@ textarea.contact-form-text{
 
 
 .copyright{
-    padding: 20px 0;
-    background-image: url(/img/intro.jpg);
+   padding: 20px 0;
+   background: #000;
 }
 .copyright__text{
     text-align: center;
